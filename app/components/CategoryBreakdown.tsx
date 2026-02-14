@@ -79,8 +79,8 @@ const CategoryBreakdown: React.FC<CategoryBreakdownProps> = ({
               </Pie>
 
               <Tooltip
-                formatter={(value: number) =>
-                  [`₹${value.toLocaleString()}`, 'Amount']
+                formatter={(value: number | undefined) =>
+                  [`₹${(value || 0).toLocaleString()}`, 'Amount']
                 }
                 contentStyle={{
                   borderRadius: '12px',

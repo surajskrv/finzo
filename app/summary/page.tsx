@@ -229,7 +229,9 @@ export default function ReportsPage() {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="name" />
                       <YAxis />
-                      <Tooltip />
+                      <Tooltip 
+                        formatter={(value: number | undefined) => [`₹${(value || 0).toLocaleString()}`, 'Spent']}
+                      />
                       <Bar dataKey="amount" fill="#8b5cf6" />
                     </BarChart>
                   ) : (
@@ -237,7 +239,9 @@ export default function ReportsPage() {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="name" />
                       <YAxis />
-                      <Tooltip />
+                      <Tooltip
+                        formatter={(value: number | undefined) => [`₹${(value || 0).toLocaleString()}`, 'Spent']}
+                      />
                       <Area
                         type="monotone"
                         dataKey="amount"
