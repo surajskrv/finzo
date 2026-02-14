@@ -1,0 +1,16 @@
+{
+    "name": "Finzo - Expense Tracker",
+    "short_name": "Finzo",
+    "description": "Modern, responsive expense tracker for personal finance.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#7c3aed",
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
